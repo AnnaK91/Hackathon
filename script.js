@@ -18,10 +18,10 @@ let funFacts = [
 // Going to start with creating the button so I can test further on.
 
 
-let btn = document.createElement("button");
-let CTA = document.createTextNode("Give me an other fact");
-btn.appendChild(CTA);
-document.body.appendChild(btn);
+// let btn = document.createElement("button");
+// let CTA = document.createTextNode("Give me an other fact");
+// btn.appendChild(CTA);
+// document.body.appendChild(btn);
 
 // adding an onclick function to the button - this is how I checked it works
 
@@ -38,7 +38,7 @@ let stories = document.getElementById("story");
 
 // random generator
 
-document.querySelector("button").onclick = function randomQuotes() {
+document.getElementById("btn").onclick = function randomQuotes() {
     let random = Math.floor(Math.random() * funFacts.length);
     console.log(random, console.log(funFacts[random].fact));
     facts.innerHTML = funFacts[random].fact;
