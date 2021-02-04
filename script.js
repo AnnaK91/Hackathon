@@ -25,3 +25,13 @@ let btn = document.createElement("button");
 let CTA = document.createTextNode("Give me an other fact");
 btn.appendChild(CTA);
 document.body.appendChild(btn);
+
+// adding an onclick function to the button - this is how I checked it works
+
+
+// document.querySelector("button").onclick = function() {
+//     alert('Click!');
+// }
+
+
+
