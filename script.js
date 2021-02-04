@@ -16,3 +16,12 @@ let funFacts = [
 ];
 
 // console.log(funFacts);
+
+
+// Going to start with creating the button so I can test further on.
+
+
+let btn = document.createElement("button");
+let CTA = document.createTextNode("Give me an other fact");
+btn.appendChild(CTA);
+document.body.appendChild(btn);
