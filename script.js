@@ -2,17 +2,11 @@
 
 
 let funFacts = [
-    {
-        'fact': "The heads on Easter Island have bodies."
-    },
-    {
-        'fact': "The moon has moonquaquakes"
-    },
-    {
-        'fact': "You lose up to 30% of your taste buds during a flight"
-    },
-    { 'fact': "Marie CUrie is the only person to earn a Nobel prize in two different sciences"}
-        
+    { 'fact': "The heads on Easter Island have bodies."},
+    { 'fact': "The moon has moonquaquakes"},
+    { 'fact': "You lose up to 30% of your taste buds during a flight"},
+    { 'fact': "Marie Curie is the only person to earn a Nobel prize in two different sciences"}
+
 ];
 
 // console.log(funFacts);
@@ -33,5 +27,21 @@ document.body.appendChild(btn);
 //     alert('Click!');
 // }
 
+ let facts = document.getElementById("fact");
+
+
+
+// going to create a function to display the objects in the array randomly
+
+// random generator
+
+document.querySelector("button").onclick = function randomQuotes() {
+    let random = Math.floor(Math.random()*funFacts.length);
+    console.log(random, console.log(funFacts[random].fact));
+    facts.innerHTML = funFacts[random].fact;
+
+}
+
+// Element.id = "nameoftheid"
 
 
